@@ -13,5 +13,18 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
-  ],
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "	GTM-TJ8CNV7B",
+        includeInDevelopment: true,
+        defaultDataLayer: function () {
+          return {
+            pageType: window.pageType,
+          }
+        },
+      },
+    },
+    "gatsby-plugin-mdx",
+  ]
 };
