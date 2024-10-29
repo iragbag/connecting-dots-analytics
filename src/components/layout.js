@@ -12,7 +12,6 @@ import useSiteMetadata from '../query/useSiteMetadata'
 
 const Layout = ({ pageTitle, children }) => {
     const siteData = useSiteMetadata()
-    console.log(siteData)
   return (
     <div className={container}>
       <header className={siteTitle}>{siteData.title}</header>
